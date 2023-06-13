@@ -1,23 +1,20 @@
 <?php
 include("../src/conection.php");
-if (isset($_POST['insert_chariyah'])) {
-    //$id = $_POST['ID'];
-    $fname = $_POST['name'];
-    $phone = $_POST['phone'];
-    $type=$_POST['Type'];
-    $date=$_POST['DonateDate'];
-    $amount=$_POST['Amount'];
-    $description=$_POST['Description'];
-   // $userid=$_POST['UserID'];
-    //$status=$_POST['Status'];
-  
-   
+if (isset($_POST['donor_insert'])) {
+    $fname = $_POST['Name'];
+    $Address=$_POST['Address'];
+    $phone=$_POST['Phone'];
+    $age=$_POST['age'];
+    // $date=$_POST['date'];
+    $bloodtype= $_POST['bloodtype'];
 
-    $insert_chariyah = mysqli_query($conection,"INSERT INTO `chariyah`(`ID`, `Name`, `Phone`, `Type`, `DonateDate`, `Amount`, `Description`) VALUES ('$fname',' $phone',' $type',' $date',' $amount','$description')");
+
+    $insert_donor = mysqli_query($conection,"INSERT INTO `blooddonor`( `Name`, `Phone`,  `Address`,
+    `Age`,  `BloodType`) VALUES('$fname','$Address','$phone','$age','$bloodtype')");
    
-    if($insert_chariyah){
+    if($insert_donor){
         echo" <script>alert('insert successfully')</script>";
-      echo "<script>window.location.href='../Chariyah.php'</script>";
+      echo "<script>window.location.href='../donor.php'</script>";
 
 
 } else {

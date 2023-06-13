@@ -129,7 +129,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          <!-- <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"> -->
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin</a>
@@ -197,29 +197,7 @@
              
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-              Manage Donation
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="donor.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Blood </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="Recipient.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Charity</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+       
          
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -248,23 +226,39 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
+                <a href="donorRepot.php
+                " class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Daily Reports</p>
+                  <p>Donor Reports</p>
                 </a>
               </li> 
               <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
+                <a href="RecipientRepot.php
+                " class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Monthly Reports</p>
+                  <p>Recipient Reports</p>
                 </a>
               </li> 
               <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
+                <a href="usersRepot.php
+                " class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Yearly Reports</p>
+                  <p>Users Reports</p>
                 </a>
               </li> 
+              <li class="nav-item">
+                <a href="chariyahRepot.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chariayh Reports</p>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="sadaqahRepot.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sadaqah Reports</p>
+                </a>
+              </li> 
+             
             </ul>
           </li>
       
@@ -276,11 +270,6 @@
               </p>
             </a>
           </li>
-       
-        
-        
-     
-          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
